@@ -32,7 +32,9 @@ int op, n1, n2;
     char ch;
     do
     {
-        // displays the multiple operations of the C Calculator
+        system("cls");
+	cal_info();
+	    // displays the multiple operations of the C Calculator
         printf (" Select an operation to perform the calculation in C Calculator: ");
         printf (" \n 1 Addition  \t \t 2 Subtraction \n 3 Multiplication \t 4 Division \n 5 Square \t \t 6 Square Root \n 7 Exit \n \n Please, Make a choice ");
 
