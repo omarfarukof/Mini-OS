@@ -32,8 +32,8 @@ int op, n1, n2;
     char ch;
     do
     {
-        system("cls");
-	    cal_info();
+	system("cls");
+	cal_info();
         
 	    // displays the multiple operations of the C Calculator
         printf (" Select an operation to perform the calculation in C Calculator: ");
