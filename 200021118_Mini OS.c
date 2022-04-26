@@ -112,7 +112,7 @@ int main(){
     }
 
     else if(!strcmp(com,"exit")){
-        printf("\n\******# Shutting Down You Mini OS. #*******\n");
+        printf("\n\n******# Shutting Down You Mini OS. #*******\n");
         exit(1);
     }
     else printf("\nCommand: \"%s\" not found.",com);
