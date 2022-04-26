@@ -5,10 +5,11 @@
 #include<math.h>
 // Add help option for few apps!
 
-#include"software.c"
+#include"sys_doc/software.c"
+
 void sys_info(){
     FILE *fl;
-    fl = fopen("sys_info.txt","r");
+    fl = fopen("sys_doc/sys_info.txt","r");
     fflush(stdin);
     char c = fgetc(fl);
     while (c != EOF)
@@ -50,13 +51,13 @@ void install_soft(){
         exit(0);
     }
 
-    if((soft_fl_c=fopen("software.c","a"))==NULL)
+    if((soft_fl_c=fopen("sys_doc/software.c","a"))==NULL)
     {
     printf("3 Permission Denied: Software is not installed.");
     exit(0);
     }
 
-    if((reg_fl_c=fopen("software_reg.c","a"))==NULL)
+    if((reg_fl_c=fopen("sys_doc/software_reg.c","a"))==NULL)
     {
     printf("4 Permission Denied: Software is not installed.");
     exit(0);
@@ -101,7 +102,7 @@ int main(){
 // To execute commands.
     //Commands for helps.
 
-    #include"software_reg.c"
+    #include"sys_doc/software_reg.c"
 
     else if(!strcmp(com,"install")){
         install_soft();

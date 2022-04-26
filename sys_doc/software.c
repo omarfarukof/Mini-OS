@@ -1,6 +1,6 @@
 void developer_info(){
     FILE *fl;
-    fl = fopen("developer_info.txt","r");
+    fl = fopen("sys_doc/developer_info.txt","r");
     fflush(stdin);
     char c = fgetc(fl);
     while (c != EOF)
@@ -14,7 +14,7 @@ void developer_info(){
 
 void cal_info(){
     FILE *fl;
-    fl = fopen("calculator_info.txt","r");
+    fl = fopen("sys_doc/calculator_info.txt","r");
     fflush(stdin);
     char c = fgetc(fl);
     while (c != EOF)
@@ -135,7 +135,7 @@ void tm(){
 
 void word_info(){
     FILE *fl;
-    fl = fopen("word_info.txt","r");
+    fl = fopen("sys_doc/word_info.txt","r");
     fflush(stdin);
     char c = fgetc(fl);
     while (c != EOF)
@@ -236,7 +236,7 @@ void word(){
 
 void excel_info(){
     FILE *fl;
-    fl = fopen("excel_info.txt","r");
+    fl = fopen("sys_doc/excel_info.txt","r");
     fflush(stdin);
     char c = fgetc(fl);
     while (c != EOF)
