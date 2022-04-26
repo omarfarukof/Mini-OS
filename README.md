@@ -2,9 +2,14 @@
 
 Few commands:
 
-sysinfo           -----to see the system information\n
-calculator        -----to open calculator software\n
-time              -----to see date & time\n
-word              -----to open word software. (a text writting software)\n
-excel             -----similer to word software\n
-install           -----install new software\n
+>sysinfo      &emsp;&emsp;     -----to see the system information
+>
+>calculator    &emsp;   -----to open calculator software
+>
+>time          &emsp; &emsp;&emsp;   -----to see date & time
+>
+>word         &emsp;  &emsp;&ensp;&nbsp;  -----to open word software. (a text writting software)
+>
+>excel         &emsp;  &emsp;&ensp;&nbsp; -----similer to word software
+>
+>install        &emsp; &emsp;&nbsp;  -----install new software
