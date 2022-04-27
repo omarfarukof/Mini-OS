@@ -2,3 +2,4 @@
 Developer:
 	Name	: Omar Faruk								ID	: 200021118
 	Inst	: Islamic University of Technology, Bangladesh (IUT)			Dept	: EEE'20
+____________________________________________________________________________________________________________

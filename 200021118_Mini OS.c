@@ -20,6 +20,9 @@ void sys_info(){
     fclose(fl);
     fflush(stdin);
 }
+void clear(){
+    system("cls");
+}
 
 void install_soft(){
     printf("Name of the software: ");
@@ -109,6 +112,9 @@ int main(){
     }
     else if(!strcmp(com,"sysinfo")){
         sys_info();
+    }
+    else if((!strcmp(com,"clear"))||(!strcmp(com,"cls"))||(!strcmp(com,"clean"))){
+        clear();
     }
 
     else if(!strcmp(com,"exit")){

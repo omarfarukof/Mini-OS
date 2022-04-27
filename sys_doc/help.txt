@@ -1,0 +1,23 @@
+
+
+help					---
+
+sysinfo					---
+
+clean/clear/cls				---
+
+exit					---
+
+calculator				---
+
+time					---
+
+word					---
+
+excel					---
+
+tic_tac_toe				---
+
+install					---
+
+

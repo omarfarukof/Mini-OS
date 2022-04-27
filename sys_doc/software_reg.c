@@ -1,5 +1,6 @@
     if(!strcmp(com,"help")){
         printf("\nThis is your help.");
+        help();
     }
     else if(!strcmp(com,"games")){
         printf("\nThis is your games.");
@@ -20,3 +21,8 @@
     }
 
     //new softwares
+    else if(!strcmp(com,"tic_tac_toe")){
+        tic_tac_toe();
+    }
+
+

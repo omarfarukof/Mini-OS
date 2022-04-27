@@ -1,3 +1,0 @@
-|X X O|	Game : Tic Tac Toe
-|O X O|	Player : 2
-|O O X|		[X & O]
