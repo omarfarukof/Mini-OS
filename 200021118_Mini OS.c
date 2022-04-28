@@ -25,7 +25,8 @@ void clear(){
 }
 
 void install_soft(){
-    printf("Name of the software: ");
+    printf("\n______[Warning: It might damage your system. You need to re-compile the system to use installed software.]______\n");
+    printf("\nName of the software: ");
     char name[100],soft[101],reg[105];
 
     scanf("%s",name);
@@ -39,8 +40,6 @@ void install_soft(){
     strcat(reg,"/");
     strcat(reg,name);
     strcat(reg,"_reg.c");
-
-    printf("%s  %s\n",soft,reg);
 
     FILE *soft_fl, *reg_fl, *soft_fl_c, *reg_fl_c;
     if((soft_fl=fopen(soft,"r"))==NULL)
@@ -85,12 +84,14 @@ void install_soft(){
     c = fgetc(reg_fl);
     }
 printf("\n__Software has successfully installed.");
-End_install:
-fclose(soft_fl);
-fclose(soft_fl_c);
-fclose(reg_fl);
-fclose(reg_fl_c);
 
+    fflush(stdin);
+    fclose(soft_fl);
+    fclose(soft_fl_c);
+    fclose(reg_fl);
+    fclose(reg_fl_c);
+    End_install:
+        printf("\n\nInstall has ended");
 }
 
 int main(){
