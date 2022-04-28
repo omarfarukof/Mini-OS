@@ -1,23 +1,23 @@
 
 
-help					---
+help					---to see available commands.
 
-sysinfo					---
+sysinfo					---to see the system information.
 
-clean/clear/cls				---
+clean/clear/cls				---to clean the texts in the terminal
 
-exit					---
+exit					---to shut down the program.
 
-calculator				---
+calculator				---to open calculator software.
 
-time					---
+time					---to see date & time.
 
-word					---
+word					---to open word software. (a text writting software)
 
-excel					---
+excel					---similer to word software.
 
-tic_tac_toe				---
+tic_tac_toe				---to open Tic Tac Toe game. (a two player board game)
 
-install					---
-
+install					---install new software.
+						[don't use until you know what to do. It will not work for pre-build program. It will need to be re-build to use the changes.]
 

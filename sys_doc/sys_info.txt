@@ -9,3 +9,6 @@
 .#/***/#################\***\###..			Inst	: Islamic University of Technology, Bangladesh (IUT)
 ..##############################..			ID	: 200021118
 ...###########################....			Dept	: EEE'20
+
+______	[type "help" and press enter, to see available commands.] __________
+
