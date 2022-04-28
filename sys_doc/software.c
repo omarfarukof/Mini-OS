@@ -122,8 +122,15 @@ int op, n1, n2;
         default:
             printf(" Something is wrong!! ");
             break;
+
     }
+    //char c=getchar();
+    int c;
+    printf("\n\nWant to continue (1/0): ");
+    scanf("%d",&c);
+    if(c==0) op=7;
     printf (" \n \n ********************************************** \n ");
+
     } while (op != 7);
 }
 
@@ -383,6 +390,8 @@ void tic_tac_toe(){
     while(game==1)
     {
 
+        system("cls");
+        tic_tac_toe_info();
         int r,c;
         char a[3][3]= {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}}, player[2]= {'X','O'}, win=' ';
 
@@ -408,6 +417,7 @@ void tic_tac_toe(){
                 {
                     a[r-1][c-1]=player[i];
                     system("cls");
+                    tic_tac_toe_info();
                     printf("\n\t    _____________\n");
                     for(int i=0; i<3; i++)
                     {

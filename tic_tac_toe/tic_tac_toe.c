@@ -25,6 +25,7 @@ void tic_tac_toe(){
     while(game==1)
     {
 
+        tic_tac_toe_info();
         int r,c;
         char a[3][3]= {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}}, player[2]= {'X','O'}, win=' ';
 

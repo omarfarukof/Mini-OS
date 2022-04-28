@@ -46,26 +46,31 @@ void install_soft(){
     if((soft_fl=fopen(soft,"r"))==NULL)
     {
         printf("1 Permission Denied: Software is not installed.");
-        exit(0);
+        goto End_install;
     }
     if((reg_fl=fopen(reg,"r"))==NULL)
     {
         printf("2 Permission Denied: Software is not installed.");
-        exit(0);
+        goto End_install;
     }
 
     if((soft_fl_c=fopen("sys_doc/software.c","a"))==NULL)
     {
     printf("3 Permission Denied: Software is not installed.");
-    exit(0);
+    goto End_install;
     }
 
     if((reg_fl_c=fopen("sys_doc/software_reg.c","a"))==NULL)
     {
     printf("4 Permission Denied: Software is not installed.");
-    exit(0);
+    goto End_install;
     }
-
+    printf("\nWarning: It might damage your system. You need to re-compile the system to use installed software.\nAre you sure, you want to continue? (1/0): ");
+    int i;
+    scanf("%d",&i);
+    if(i!=1){
+        goto End_install;
+    }
 
     char c = fgetc(soft_fl);
     while (c != EOF)
@@ -80,7 +85,7 @@ void install_soft(){
     c = fgetc(reg_fl);
     }
 printf("\n__Software has successfully installed.");
-
+End_install:
 fclose(soft_fl);
 fclose(soft_fl_c);
 fclose(reg_fl);
